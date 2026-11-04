@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thayná Barcelos Acessórios</title>
+  <meta name="description" content="Loja de acessórios: brincos, colares, pulseiras, anéis e conjuntos. Monte o carrinho e finalize pelo WhatsApp." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="pular" href="#conteudo" onclick="event.preventDefault();document.getElementById('conteudo').focus()">Pular para o conteúdo</a>
+  <p class="aviso-prototipo" id="aviso-prototipo" hidden>Protótipo para aprovação. Só 3 preços vêm dos stories da loja; os demais preços, cores, tamanhos e promoções são exemplos.</p>
+  <header class="topo" id="topo"></header>
+
+  <main id="conteudo" tabindex="-1"></main>
+
+  <footer class="rodape">
+    <div class="recipiente rodape__linha">
+      <p id="rodape-texto"></p>
+      <p class="rodape__links">
+        <a id="rodape-whats" target="_blank" rel="noopener">WhatsApp</a>
+        <a id="rodape-insta" target="_blank" rel="noopener">Instagram</a>
+        <a href="#/contato">Dúvidas sobre a compra</a>
+      </p>
+    </div>
+  </footer>
+
+  <dialog class="janela" id="janela-opcoes" aria-labelledby="janela-titulo">
+    <button type="button" class="janela__fechar" data-fechar aria-label="Fechar">×</button>
+    <div class="janela__grade" id="janela-conteudo"></div>
+  </dialog>
+
+  <div class="aviso" id="aviso" role="status"></div>
+  <button type="button" class="voltar-topo" id="voltar-topo" aria-label="Voltar ao topo"></button>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
